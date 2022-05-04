@@ -3,6 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # Folder Structure
+```
 src
 ├── assets/
 ├────── styles/
@@ -21,8 +22,7 @@ src
 ├── test/
 ├── App.jsx
 ├── index.js
-├── package.json
-├── maps/
+```
 
 ## Available Scripts
 
