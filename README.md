@@ -2,6 +2,28 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Folder Structure
+src
+├── assets/
+├────── styles/
+├────────── main.css
+├── component/
+├────── custom-hooks/
+├────────── useFetch.jsx
+├────── page/
+├────────── Course.jsx
+├────────── Error.jsx
+├────────── Footer.jsx
+├────────── Layout.jsx
+├────────── Nav.jsx
+├────────── NoPage.jsx
+├────────── Overview.jsx
+├── test/
+├── App.jsx
+├── index.js
+├── package.json
+├── maps/
+
 ## Available Scripts
 
 In the project directory, you can run:
