@@ -1,44 +1,24 @@
-import React, { useEffect, useState } from 'react';
-import axios from "axios";
+import React, { useEffect, useState } from 'react'
+import '../../assets/styles/main.css'
 import { Link, useParams } from 'react-router-dom'
-import { useFetch } from '../custom-hooks/useFetch';
+import { useFetch } from '../custom-hooks/useFetch'
 
-function Overview() {
- const {id}= useParams();
-
-const path = id.replace(/\&/g, "/")
- const url= `https://www.sydney.edu.au${path}.overview.json`;
-// const url = `https://www.sydney.edu.au/content/courses/courses/uc/bachelor-of-commerce-and-bachelor-of-laws.overview.json`
-// const [subjectOverview,setSubjectOverview]=useState({});
-const {subState} = useFetch(url)
-// const fetchSubject=()=>{
-// axios
-// .get(url)
-// .then((resp) => {
-//   // console.log(resp);
-//    console.log(resp.data);
-//   setSubjectOverview(resp.data);
-// })
-// .catch((err) => console.log(err))
-
-// };
-// useEffect(()=>{
-//   fetchSubject();
-
-// },[])
-
+function Overview () {
+  const { id } = useParams()
+  const path = id.replace(/\&/g, '/')
+  const url = `https://www.sydney.edu.au${path}.overview.json`
+  const { subState } = useFetch(url)
   return (
-    <div>
-       <Link to="/">Go to Find Course</Link>
+    <div className="search-form">
+        <div className="breadcrum">
+       <Link to="/"> Back To Course</Link>
+        </div>
       <h2>  Overview  </h2>
-  
-            <div key={id}>
-              <p>{subState.title}</p>
+            <div key={id} className="overview">
+              <h3 >{subState.title}</h3>
               <p>{subState.description}</p>
             </div>
-
     </div>
-    
   )
 }
 

@@ -1,10 +1,8 @@
 import React from 'react'
 
 function Error() {
-
   return (
-    <h1>Error!!! Page Not Found</h1>
-    
+    <h3>Error!!! Page Not Found</h3>
   )
 }
 

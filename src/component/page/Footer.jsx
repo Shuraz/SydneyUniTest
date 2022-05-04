@@ -3,7 +3,7 @@ import '../../assets/styles/main.css'
 function Footer() {
   return (
     <footer>
-        <h3>Footer</h3>
+        <p>copyright@surajpok.au@gmail.com</p>
     </footer>
   )
 }

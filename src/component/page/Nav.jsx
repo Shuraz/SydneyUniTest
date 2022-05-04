@@ -3,7 +3,7 @@ import React from 'react'
 function Nav() {
   return (
     <header>
-        <h1>Title</h1>
+        <h1>Sydney Uni course</h1>
     </header>
   )
 }

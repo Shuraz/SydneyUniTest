@@ -1,22 +1,16 @@
 import {
   BrowserRouter,
   Routes,
-  Route,
-} from "react-router-dom";
-import logo from './logo.svg';
+  Route
+} from 'react-router-dom'
+import Course from './component/page/Course'
+import Overview from './component/page/Overview'
+import NoPage from './component/page/NoPage'
+import Layout from './component/page/Layout'
 
-import './css/App.css';
-// import './css/main.css';
-import Course from "./component/page/Course";
-import Overview from "./component/page/Overview";
-import Error from "./component/page/Error";
-import NoPage from "./component/page/NoPage";
-import Layout from "./component/page/Layout";
- 
-
-function App() {
+function App () {
   return (
-    <div>
+    <>
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout/>}>
@@ -27,8 +21,8 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-    </div>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App
