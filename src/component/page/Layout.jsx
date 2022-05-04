@@ -6,7 +6,7 @@ const Layout = () => {
   return (
     <>
     <Nav/>
-      <nav>
+      {/* <nav>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -18,7 +18,7 @@ const Layout = () => {
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
-      </nav>
+      </nav> */}
 
       <Outlet />
       <Footer/>
