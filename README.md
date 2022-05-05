@@ -43,18 +43,18 @@ src
 ├── index.js
 ```
 ### Info
-`Course.jsx`:  This is component has input field to search the course.  This fetches the API data and present them in the list.
-`Overview.jsx`:  This is component route the with the list of courses and present the over view of the subject.
-`Footer.jsx` `Layout.jsx` `Error.jsx` `Nav.jsx` `NoPage.jsx` : These component are only for better UI experience and code readable.
-`useFetch.jsx` : This is a custom hook for code reusability to fetch the api data and return as object. Here I have used axios to perform HTTP requests
-`main.css` : This a css file for the presentation of a document.
+1. `Course.jsx`:  This is component has input field to search the course.  This fetches the API data and present them in the list.
+2. `Overview.jsx`:  This is component route the with the list of courses and present the over view of the subject.
+3. `Footer.jsx` `Layout.jsx` `Error.jsx` `Nav.jsx` `NoPage.jsx` : These component are only for better UI experience and code readable.
+4. `useFetch.jsx` : This is a custom hook for code reusability to fetch the api data and return as object. Here I have used axios to perform HTTP requests.
+5. `main.css` : This a css file for the presentation of a document.
 
 # Requirements
  1. You’ll need to have Node 14.0.0 or later version on your local development machine (but it’s not required on the server). We recommend using the latest LTS version. You can use nvm (macOS/Linux) or nvm-windows to switch Node versions between different projects.
  2. (npx is a package runner tool that comes with npm 5.2+ and higher, see instructions for older npm versions)
   
 # How to Run
-1.` npm install`
+1. ` npm install`
 2. `npm start`
  Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
