@@ -9,11 +9,12 @@ Fetching the api data and presenting them in list, and futher displaying the ove
 
 
 # Tech Stacks
--- HTML
--- CSS
--- Javascript
--- ReactJS
-
+```
+- HTML
+- CSS
+- Javascript
+- ReactJS
+```
 
 # Configuration options
 You may need to install the Allow CORS browser plugin for your local development. For example, Chrome “Allow CORS” plugin https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en and Firefox “CORS Everywhere” plugin https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/.
@@ -23,31 +24,33 @@ You may need to install the Allow CORS browser plugin for your local development
 ```
 src
 ├── assets/
-├────── styles/
-├────────── main.css
+├      ├─── styles/
+├                ├─── main.css
 ├── component/
-├────── custom-hooks/
-├────────── useFetch.jsx
-├────── page/
-├────────── Course.jsx
-├────────── Error.jsx
-├────────── Footer.jsx
-├────────── Layout.jsx
-├────────── Nav.jsx
-├────────── NoPage.jsx
-├────────── Overview.jsx
+├      ├──── custom-hooks/
+├                ├───── useFetch.jsx
+├        ├───── page/
+├                ├────── Course.jsx
+├                ├────── Error.jsx
+├                ├────── Footer.jsx
+├                ├────── Layout.jsx
+├                ├────── Nav.jsx
+├                ├────── NoPage.jsx
+├                ├────── Overview.jsx
 ├── test/
 ├── App.jsx
 ├── index.js
 ```
+# Requirements
+ 1. You’ll need to have Node 14.0.0 or later version on your local development machine (but it’s not required on the server). We recommend using the latest LTS version. You can use nvm (macOS/Linux) or nvm-windows to switch Node versions between different projects.
+ 2. (npx is a package runner tool that comes with npm 5.2+ and higher, see instructions for older npm versions)
 # How to install
- 1. npm install
- 2. `npm start`
+ 1.` npm install`
+  
+# How to use
+1. `npm start`
  Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-  
-
-# How to use
 
 ## Available Scripts
 
