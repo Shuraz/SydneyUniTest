@@ -5,15 +5,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # About
 
 Demonstrating the skills HTML, CSS and JavaScript, and others frontend tech stacks.
+User interface to search the courses offered in Sydney University.
 Fetching the api data and presenting them in list, and futher displaying the overview of the listed data.
 
 
-# Tech Stacks
+# Tech Stacks used
 ```
 - HTML
 - CSS
-- Javascript
-- ReactJS
+- Javascript/ ES6
+- ReactJS and its hooks
 ```
 
 # Configuration options
@@ -29,7 +30,7 @@ src
 ├── component/
 ├      ├──── custom-hooks/
 ├                ├───── useFetch.jsx
-├        ├───── page/
+├      ├───── page/
 ├                ├────── Course.jsx
 ├                ├────── Error.jsx
 ├                ├────── Footer.jsx
@@ -41,6 +42,13 @@ src
 ├── App.jsx
 ├── index.js
 ```
+### Info
+`Course.jsx`:  This is component has input field to search the course.  This fetches the API data and present them in the list.
+`Overview.jsx`:  This is component route the with the list of courses and present the over view of the subject.
+`Footer.jsx` `Layout.jsx` `Error.jsx` `Nav.jsx` `NoPage.jsx` : These component are only for better UI experience and code readable.
+`useFetch.jsx` : This is a custom hook for code reusability to fetch the api data and return as object. Here I have used axios to perform HTTP requests
+`main.css` : This a css file for the presentation of a document.
+
 # Requirements
  1. You’ll need to have Node 14.0.0 or later version on your local development machine (but it’s not required on the server). We recommend using the latest LTS version. You can use nvm (macOS/Linux) or nvm-windows to switch Node versions between different projects.
  2. (npx is a package runner tool that comes with npm 5.2+ and higher, see instructions for older npm versions)
