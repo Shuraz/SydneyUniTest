@@ -2,6 +2,23 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# About
+
+Demonstrating the skills HTML, CSS and JavaScript, and others frontend tech stacks.
+Fetching the api data and presenting them in list, and futher displaying the overview of the listed data.
+
+
+# Tech Stacks
+-- HTML
+-- CSS
+-- Javascript
+-- ReactJS
+
+
+# Configuration options
+You may need to install the Allow CORS browser plugin for your local development. For example, Chrome “Allow CORS” plugin https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en and Firefox “CORS Everywhere” plugin https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/.
+
+
 # Folder Structure
 ```
 src
@@ -23,6 +40,9 @@ src
 ├── App.jsx
 ├── index.js
 ```
+# How to install
+
+# How to use
 
 ## Available Scripts
 
