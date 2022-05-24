@@ -28,19 +28,21 @@ function Course() {
     setItemOffset(newOffset);
     listData(mainData, newOffset);
   };
-  // fetch list data
-  const fetchSubject = async () => {
-    try {
-      const resp = await axios.get(url);
-      if (resp) {
-        const results = resp.data.results;
+  const fetchSubject = () => {
+    fetch(url)
+      .then(response => {
+        if (!response.ok) {
+          throw Error("ERROR");
+        }
+        return response.json();
+      }).then(data => {
+        const results = data.results;
         setData(results);
         setMainData(results);
         listData(results, 0);
-      }
-    } catch (error) {
-      console.log(error);
-    }
+      }).catch(error => {
+        console.log(error);
+      })
   };
 
   function mySubmitFunction(e) {

@@ -84,6 +84,7 @@ h4 {
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
+  color: var(--clr-grey-2);
 }
 
 h1 {
@@ -138,18 +139,6 @@ p {
 
 /*  global classes */
 
-/* section */
-.section {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: var(--max-width);
-}
-
-@media screen and (min-width: 992px) {
-  .section {
-    width: 95vw;
-  }
-}
 
 /*
   =============== 
@@ -177,7 +166,9 @@ p {
   letter-spacing: var(--spacing);
   margin-top: 1rem;
 }
-
+.error-message{
+  color: var(  --clr-red-dark);
+}
 /*
   =============== 
   Buttons
@@ -214,12 +205,7 @@ p {
   cursor: pointer;
 }
 
-.btn-container button:disabled {
-  cursor: not-allowed;
-}
-
-/*
-  =============== 
+/* =============== 
   Spinner
   ===============
   */
@@ -246,7 +232,7 @@ p {
 
 /*
   =============== 
-  Story
+ Courses and overview
   ===============
   */
 .courses {
@@ -327,9 +313,14 @@ footer {
   padding: 25px 16px;
   text-decoration: none;
 }
-
+.breadcrum a:link{
+  color: var(--clr-primary-5);
+}
+.breadcrum a:visited{
+  color: var(--clr-primary-5);
+}
 .breadcrum a:hover {
-  color: #01447e;
+  color: var(--clr-primary-5);
   text-decoration: underline;
 }
 
@@ -352,6 +343,11 @@ footer {
   color: var(--clr-primary-5);
 }
 
+/*
+  =============== 
+Flex box for search input and button
+  ===============
+  */
 .search-container {
   display: flex;
   flex-direction: row;
@@ -364,11 +360,6 @@ footer {
   flex: 50%;
 }
 
-/* .search-button {
-  padding: 5px;
-  flex: 40%;
-  border-radius: 25px;
-} */
 @media (max-width: 600px) {
   .search-container {
     flex-direction: column;
